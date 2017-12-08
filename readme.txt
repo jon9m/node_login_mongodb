@@ -18,3 +18,5 @@
 //   "passport-local": "*"             //
 
 3) After adding these dependencies run - npm install
+
+4) Need a mongodb db name - loginapp
