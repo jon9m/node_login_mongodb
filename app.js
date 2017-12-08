@@ -68,11 +68,11 @@ app.use(expressValidator({
 app.use(flash());
 
 //Global vars
-
-app.use(function(req, res, next){
+app.use(function (req, res, next) {
     res.locals.success_msg = req.flash('success_msg');
     res.locals.error_msg = req.flash('error_msg');
     res.locals.error = req.flash('error');
+    res.locals.user = req.user || null;
     next();
 });
 
@@ -82,6 +82,6 @@ app.use('/users', users);
 
 app.set('port', (process.env.PORT || 3000));
 
-app.listen(app.get('port'), function(){
+app.listen(app.get('port'), function () {
     console.log("Server created on port " + app.get('port'));
 });
