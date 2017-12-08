@@ -18,7 +18,3 @@
 //   "passport-local": "*"             //
 
 3) After adding these dependencies run - npm install
-
-
-//https://www.youtube.com/watch?v=OnuC3VtEQks - part 2
-//https://www.youtube.com/watch?v=iX8UhDOmkPE - part3
